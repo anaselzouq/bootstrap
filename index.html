@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div class="up"><i class="fa-solid fa-up-long"></i></div>
+    <!-- Header -->
+    <div class="header py-3">
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark position-fixed top-0 start-0 px-5 w-100"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">TEMPO</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#action">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#another-action"
+                        >Another action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#something-else-here"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="home" id="home">
+          <p class="top-text fs-3 px-5 py-2 mb-3 rounded">Welcome to Tempo</p>
+          <h1 class="main-heading fw-bold">WE'RE CREATIVE AGENCY</h1>
+          <p class="support-par">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <button class="btn mt-3">
+            <a href="#about">Get Started</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+      <div class="container mt-5">
+        <div class="text-center m-auto d-flex flex-column about-heading">
+          <div class="main">About</div>
+          <h2 class="about-us">Learn More <span>About Us</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="about-check">
+          <div class="boxs">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="box">
+              <i class="fa-solid fa-check"></i>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-check"></i>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            </div>
+            <div class="box">
+              <i class="fa-solid fa-check"></i>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+          </div>
+          <div class="about-me">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+            <button class="btn mt-3">
+              <a href="#about" class="active">Learn More</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="services" id="services">
+      <div class="container">
+        <div class="text-center m-auto d-flex flex-column about-heading">
+          <div class="main">Services</div>
+          <h2 class="about-us">We do offer awesome <span>Services</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 text-center shadow col-md-5 mb-3 col-12">
+            <div class="bg"></div>
+            <i class="fa-solid fa-phone fs-1"></i>
+            <h6 class="pb-2 fw-bold">Lorem ipsum</h6>
+            <p>
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi
+            </p>
+          </div>
+          <div class="col-lg-3 text-center shadow ms-2 col-md-5 mb-3 col-12">
+            <div class="bg"></div>
+            <i class="fa-regular fa-file fs-1"></i>
+            <h6 class="pb-2 fw-bold">Sed ut perspiciatis</h6>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore
+            </p>
+          </div>
+          <div class="col-lg-3 text-center shadow ms-2 col-md-5 mb-3 col-12">
+            <div class="bg"></div>
+            <i class="fa-solid fa-scale-balanced fs-1"></i>
+            <h6 class="pb-2 fw-bold">Magni Dolores</h6>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia
+            </p>
+          </div>
+          <div class="col-lg-3 text-center shadow ms-2 col-md-5 mb-3 col-12">
+            <div class="bg"></div>
+            <i class="fa-solid fa-earth-americas fs-1"></i>
+            <h6 class="pb-2 fw-bold">Nemo Enim</h6>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis
+            </p>
+          </div>
+        </div>
+        <div class="icons mt-5">
+          <div class="row">
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/stand.png" alt="" />
+              <p class="fs-6">Lorem Ipsum</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/bar-graph.png" alt="" />
+              <p class="fs-6">Dolor Sitema</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/schedule.png" alt="" />
+              <p class="fs-6">Sed perspiciatis</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/water-tap.png" alt="" />
+              <p class="fs-6">Magni Dolores</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/money.png" alt="" />
+              <p class="fs-6">Nemo Enim</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/music-note.png" alt="" />
+              <p class="fs-6">Eiusmod Tempor</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/folder.png" alt="" />
+              <p class="fs-6">Sed Perspiciatis</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/mosque.png" alt="" />
+              <p class="fs-6">Pira Neve</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/ship.png" alt="" />
+              <p class="fs-6">Dirada</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/temperature.png" alt="" />
+              <p class="fs-6">Moton Ideal</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/alarm.png" alt="" />
+              <p class="fs-6">Verdo Park</p>
+            </div>
+            <div class="box col-lg-3 col-md-5 col-12">
+              <img src="imgs/fingerprint.png" alt="" />
+              <p class="fs-6">Flavor Nivelanda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call To Action -->
+
+    <div class="call mt-5 mb-5">
+      <div class="container text-center pt-5 pb-5">
+        <h2>Call To Action</h2>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </p>
+        <button class="btn mt-3">
+          <a href="#about">Call To Action</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio mt-5" id="portfolio">
+      <div class="container">
+        <div class="text-center m-auto d-flex flex-column about-heading">
+          <div class="main">Portfolio</div>
+          <h2 class="about-us">Check our <span>Portfolio</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <ul class="text-center d-flex flex-row justify-content-center ps-0 mb-4">
+          <li class="me-2 active">All</li>
+          <li class="me-2">App</li>
+          <li class="me-2">Card</li>
+          <li class="me-2">Web</li>
+        </ul>
+        <div class="row">
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-1.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-2.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-3.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-4.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+        
+        
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-5.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-6.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-7.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-8.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="box col-md-4">
+            <img src="imgs/portfolio-9.jpg" alt="" />
+            <div class="app justify-content-between d-flex align-items-center">
+              <div>App</div>
+              <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing mt-5">
+      <div class="container">
+        <div class="text-center sub-heading m-auto mb-3 d-flex flex-column about-heading">
+          <div class="main">Pricing</div>
+          <h2 class="about-us">Our Competing  <span>Prices</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet modi omnis est 
+            adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col col-md-4 col-lg-3 col-sm-12 option pt-2 pb-5">
+            <h3 class="heading">Free</h3>
+            <div class="salary"><div>$</div><span class="dolar">0</span><span class="month">/month</span></div>
+            <ul class="mt-2">
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li class="head-line">Pharetra massa</li>
+              <li class="head-line">Massa ultricies mi</li>
+            </ul>
+            <button class="btn mt-3 not-active">
+              <a href="#about" class="active">Buy Now</a>
+            </button>
+          </div>
+
+          <div class="col col-md-4 col-lg-3 center-option col-sm-12 pt-2 pb-5 ms-4 me-4">
+            <div class="main">Recommended</div>
+            <h3 class="heading">Business</h3>
+            <div class="salary"><div>$</div><span class="dolar">19</span><span class="month">/month</span></div>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li class="head-line">Massa ultricies mi</li>
+            </ul>
+            <button class="btn mt-3 active">
+              <a href="#about" class="col">Buy Now</a>
+            </button>
+          </div>
+
+          <div class="col col-md-4 col-lg-3 col-sm-12 option pt-2 pb-5">
+            <h3 class="heading">Business</h3>
+            <div class="salary"><div>$</div><span class="dolar">29</span><span class="month">/month</span></div>
+            <ul class="mt-2">
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+            <button class="btn mt-3 not-active">
+              <a href="#about" class="active">Buy Now</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq" id="faq">
+      <div class="container pt-5">
+        <div class="text-center pt-5 sub-heading m-auto mb-3 d-flex flex-column about-heading">
+          <div class="main">F.A.Q</div>
+          <h2 class="about-us">Frequently Asked  <span>Questions</span></h2>
+        </div>
+        <div class="accordion" id="accordionExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Non consectetur a erat nam at lectus urna duis?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSex" aria-expanded="false" aria-controls="collapseThree">
+                Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?
+              </button>
+            </h2>
+            <div id="collapseSex" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team pt-5 mt-5" id="team">
+      <div class="container pt-5">
+        <div class="text-center sub-heading m-auto mb-3 d-flex flex-column about-heading">
+          <div class="main">Team</div>
+          <h2 class="about-us">Our Hardworking  <span>Team</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet
+            modi omnis est adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <div class="row cards">
+          <div class="col-lg-3 col-md-5 position-relative card m-1 rounded p-0">
+            <img src="imgs/team-1.jpg" class="w-100">
+            <div class="social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="word m-3">
+              <h3 class="name mt-3 mb-3 text-center">Walter</h3>
+              <p class="about-person mb-3 text-center">Chief Executive</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 position-relative card rounded m-1 p-0">
+            <img src="imgs/team-2.jpg" class="w-100">
+            <div class="social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="word m-3">
+              <h3 class="name mt-3 mb-3 text-center">Sarah</h3>
+              <p class="about-person mb-3 text-center">Product Manager</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 position-relative card rounded m-1 p-0">
+            <img src="imgs/team-3.jpg" class="w-100">
+            <div class="social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="word m-3">
+              <h3 class="name mt-3 mb-3 text-center">William</h3>
+              <p class="about-person mb-3 text-center">CTO</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 position-relative card rounded m-1 p-0">
+            <img src="imgs/team-4.jpg" class="w-100">
+            <div class="social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="word m-3">
+              <h3 class="name mt-3 mb-3 text-center">Amanda</h3>
+              <p class="about-person mb-3 text-center">Accountant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact pt-5 mt-5" id="contact">
+      <div class="container pt-5">
+        <div class="text-center sub-heading m-auto mb-3 d-flex flex-column about-heading">
+          <div class="main">Contact</div>
+          <h2 class="about-us">Contact  <span>Us</span></h2>
+          <p>
+            Ut possimus qui ut temporibus culpa velit eveniet
+            modi omnis est adipisci expedita at voluptas atque vitae autem.
+          </p>
+        </div>
+        <iframe class="text-center w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015.7930389526356!2d31.149565605431487!3d31.09007306946218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7a6e750a85699%3A0xa12c0b232eb3256c!2z2K_Zhdix2YjYjCDYr9mF2LHZiCDYrtmF2KfYsdmH2Iwg2YXYsdmD2LIg2KfZhNmF2K3ZhNmHINin2YTZg9io2LHZidiMINmF2K3Yp9mB2LjYqSDYp9mE2LrYsdio2YrYqQ!5e0!3m2!1sar!2seg!4v1732906360925!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="d-flex mt-5">
+          <div class="inform">
+            <div class="contact-loaction">
+              <i class="fa-solid fa-location-dot fs-3 rounded-circle one"></i>
+              <div class="form">
+                <h3>Location:</h3>
+              <span>A108 Adam Street, New York, NY 535022</span>
+              </div>
+            </div>
+            <div class="contact-email">
+              <i class="fa-solid fa-envelope fs-3 rounded-circle"></i>
+              <div class="form">
+                <h3>Email:</h3>
+              <span>anselzour@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-call">
+              <i class="fa-solid fa-mobile fs-3 rounded-circle tow"></i>
+              <div class="form">
+                <h3>Call:</h3>
+              <span>A108 Adam Street, New York, NY 535022</span>
+              </div>
+            </div>
+          </div>
+          <form action="">
+            <div class="row mb-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+            <input type="text" class="form-control mb-3" placeholder="Subject" aria-label="Subject">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <button class="btn mt-3 not-active">
+              <a href="#about" class="col">Send Message</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tempo -->
+    <div class="tempo shadow pt-5">
+      <div class="container pt-5 mt-5">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="tem">
+            <h3 class="name">Tempo</h3>
+            <p class="mt-3 color para">A108 Adam Street <br>
+              New York, NY 535022 <br>
+              United States
+            </p>
+            <span class="phone mb-2 d-block">Phone: <span class="color">+20 1158679633</span></span>
+            <span class="email">Email: <span class="color">anselzour@gmail.com</span></span>
+          </div>
+          <div class="useful-link">
+            <h3 class="name">Useful link</h3>
+            <ul class="mt-3">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="useful-link ms-5">
+            <h3 class="name">Our Services</h3>
+            <ul class="mt-3">
+              <li><a href="#home">Web Design</a></li>
+              <li><a href="#about">Web Development</a></li>
+              <li><a href="#services">Product Management</a></li>
+              <li><a href="#portfolio">Marketing</a></li>
+              <li><a href="#faq">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="join ms-5 w-25">
+            <h3 class="name mb-2">Join Our Newsletter</h3>
+            <p class="color">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-danger" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer mt-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>&copy; Copyright <span>Tempo</span>.All Rights Reserved <br>Designed by Nursaidbek Qodirov</p>
+        <div class="icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-skype"></i>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

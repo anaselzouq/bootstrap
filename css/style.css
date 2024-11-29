@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.up {
+  background-color: #c4344f;
+  padding: 0.6rem 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #fff;
+  transform: translateY(-10000%);
+}
+
+.up.active {
+  transform: translateY(0);
+}
+
+li {
+  list-style: none;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in;
+}
+
+.btn a:hover {
+  background-color: #c4344f;
+  border: none;
+}
+
+/* Header */
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(../imgs/hero-bg.jpg) center / cover no-repeat;
+  min-height: 100vh;
+}
+
+.navbar {
+  transition: 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar.active {
+  background-color: #000 !important;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.collapse {
+  justify-content: right;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 8px;
+  margin: 0 0 0 8px;
+  left: 0;
+  color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 32px !important;
+  margin: 0 16px 0 0;
+  padding: 5px 0;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #c4344f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  }
+}
+
+/* Home */
+
+.home {
+  text-align: center;
+  padding-top: 10rem;
+  color: #f8f9fa;
+  margin: auto;
+}
+
+.home .top-text {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home .main-heading {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.home .support-par {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+/* About */
+
+.about {
+  padding-top: 35px;
+}
+
+.about-heading {
+  width: 550px;
+}
+
+.main {
+  background-color: #fdeff2;
+  width: fit-content;
+  color: #c4344f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.3rem 1.2rem;
+  margin: 6px auto;
+  border-radius: 1rem;
+}
+
+.about-us {
+  font-size: 2.2rem;
+}
+
+.about-us span {
+  color: #c4344f;
+}
+
+.about-heading p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.about .about-check {
+  display: flex;
+  margin: auto;
+}
+
+.about .about-check p {
+  margin-left: 5px;
+}
+
+.about .boxs .box {
+  display: flex;
+}
+
+.about .boxs {
+  width: 48%;
+  margin-left: 3%;
+}
+
+.about .about-me {
+  width: 50%;
+}
+
+.btn a.active {
+  border-color: #c4344f;
+  color: #c4344f;
+}
+
+.btn a.active:hover {
+  color: #fff;
+}
+
+/* Services */
+
+.services {
+  margin-top: 7rem;
+}
+
+.services .card {
+  border: none; /* إزالة الحدود */
+  border-radius: 15px; /* زوايا مستديرة */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+.card-body {
+  padding: 2rem; /* توسيع الحواف داخل البطاقات */
+}
+.services .card i {
+  font-size: 3rem; /* حجم الأيقونات */
+  color: #d63384; /* لون أيقونات مشابه للصورة */
+}
+.card-title {
+  font-weight: bold; /* عناوين عريضة */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.card-text {
+  color: #6c757d; /* لون نصوص الوصف */
+}
+
+.shadow {
+  height: 300px;
+  cursor: pointer;
+  /* transition: all 0.4s ease-in; */
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 6px;
+}
+
+.services .shadow:not(:first-child) {
+  z-index: 6;
+}
+
+.services .shadow .bg {
+  width: 100%;
+  height: 0%;
+  background-color: #c4344f;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.services .shadow:hover i {
+  color: #fff;
+}
+
+.services .shadow:hover .bg {
+  height: 100%;
+}
+
+.services .shadow:hover {
+  color: #fff;
+}
+
+.services .shadow i {
+  color: crimson;
+}
+
+.services .shadow h6 {
+  margin-top: 1rem;
+}
+
+.box img {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover !important;
+}
+
+.icons .row .box {
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: 9px;
+}
+
+.icons .row .box p {
+  margin-left: 1rem;
+}
+
+.icons .row .box p:hover {
+  margin-left: 1rem;
+  color: crimson;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    width: 24% !important;
+  }
+}
+
+/* Call To Action */
+
+.call {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url(/imgs/cta-bg.jpg) center / cover no-repeat;
+  color: #fff;
+}
+
+/* Portfolio */
+
+.portfolio ul li {
+  background-color: #ede9e9;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio ul li:hover,
+.portfolio ul li.active {
+  background-color: crimson;
+  color: #fff;
+}
+
+.portfolio .box img {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.portfolio .box {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio .app {
+  background-color: crimson;
+  color: #fff;
+  height: 0;
+  opacity: 0;
+  display: none;
+  padding-inline: 10px;
+  transition: 0.3s;
+}
+
+.portfolio .box:hover .app {
+  height: 40px;
+  opacity: 1;
+}
+
+.portfolio .box .app div:first-child {
+  font-size: 1.3rem;
+}
+
+/* Pricing */
+
+.pricing .container .option,
+.pricing .container .center-option {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 0.375rem;
+  height: 464.77px;
+}
+
+.pricing .heading {
+  color: crimson;
+}
+
+.pricing .salary {
+  display: flex;
+  align-items: center;
+}
+
+.pricing .salary:not(:last-child) {
+  color: #c4344f;
+}
+
+.pricing .salary div {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.pricing .salary .dolar {
+  font-size: 35px;
+  color: #c4344f;
+}
+
+.pricing .salary .month {
+  font-size: 18px;
+  color: #cdbdc5;
+}
+
+.pricing .container .option ul,
+.pricing .container .center-option ul {
+  padding: 0;
+}
+
+.pricing .container .center-option {
+  border: 3px solid #c4344f;
+  margin-bottom: 28.78px;
+  justify-content: space-between;
+}
+
+.pricing .container .center-option .main {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: black;
+}
+
+.pricing .container .center-option .btn,
+.pricing .container .option .btn {
+  border: none;
+}
+
+.btn a.col {
+  color: #fff;
+  background-color: #c4344f;
+  border: none;
+}
+
+.btn a:hover {
+  opacity: 0.8;
+}
+
+.pricing .container ul li {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.pricing .container ul li.head-line {
+  color: #cdbdc5;
+  text-decoration: line-through;
+}
+
+/* Team */
+
+.team .cards .card {
+  cursor: pointer;
+}
+
+.team .cards .card .word .name {
+  font-size: 22px;
+}
+
+.team .cards .card .word .about-person {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.team .cards .card .social-media {
+  text-align: center;
+  background-color: #ffffffb4;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 124px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.team .cards .card:hover .social-media {
+  opacity: 1;
+}
+
+.team .cards .card .social-media i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+/* Contact */
+
+.contact .contact-loaction,
+.contact .contact-email,
+.contact .contact-call {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.contact form {
+  width: 100%;
+  margin-left: 50px;
+  position: relative;
+}
+
+.contact .contact-loaction i,
+.contact .contact-email i,
+.contact .contact-call i {
+  background-color: #ede9e9;
+  color: #c4344f;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.contact .one,
+.contact .tow {
+  line-height: 0px !important;
+  padding: 30px 20px;
+}
+
+.contact .contact-loaction:hover i,
+.contact .contact-email:hover i,
+.contact .contact-call:hover i {
+  color: #fff;
+  background-color: #c4344f;
+}
+
+.contact .form span {
+  color: #a06a84;
+  font-size: 16px;
+}
+
+.contact form button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact form textarea {
+  height: 183px !important;
+}
+
+/* Tempo */
+
+.tempo {
+  padding-bottom: 135px;
+  margin-top: 89px !important;
+  cursor: auto;
+}
+
+.tempo .name {
+  color: #c4344f;
+  margin: 0;
+}
+
+.tempo .tem .phone .color,
+.tempo .tem .email .color,
+.tempo .tem p.color {
+  color: #a06a84;
+}
+
+.tempo .tem .para {
+  line-height: 2.1;
+}
+
+.tempo .useful-link ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+}
+
+.tempo .useful-link ul li a {
+  color: #a06a84;
+  text-decoration: none;
+}
+
+.tempo .join .color {
+  color: #a06a84;
+}
+
+/* Footer */
+
+.footer p {
+  color: #a06a84;
+  line-height: 2;
+}
+
+.footer p span {
+  color: black;
+  font-weight: 500;
+}
+
+.footer .icons i {
+  font-size: 22px;
+  margin-inline: 5px;
+  padding: 10px;
+  background-color: rgb(187, 24, 57);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer .icons i:hover {
+  background-color: crimson;
+}
